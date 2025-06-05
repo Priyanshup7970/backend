@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+//import express from "express"
 const app = express()
 const port = 3000
 
@@ -42,11 +43,14 @@ app.get('/api/jokes', (req, res) => {
 app.get('/twitter', (req, res) => {
     res.send('twitter.com')
   });
+app.get('/github' , (req,res) => {
+  res.send('github.com')
+});
 app.get('/login',(req,res) =>{
     res.send('login')
 });
 app.get('/youtube',(req,res) =>{
-    res.send('chai or code youtube')
+    res.send('priyanshu youtube')
 });
   
 app.listen(process.env.PORT, () => {
